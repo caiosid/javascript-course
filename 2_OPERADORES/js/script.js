@@ -23,3 +23,7 @@ console.log(`13`);
 
 console.log(typeof "Um texto");
 console.log(typeof `Mais um texto`);
+
+// 5 - Símbolos especiais em string
+console.log("Testando a \n quebra de linha");
+console.log("Espaçamento \t de tab")
