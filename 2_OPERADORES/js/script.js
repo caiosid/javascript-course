@@ -35,3 +35,12 @@ console.log(`Testando ` + `com ` + ` crase!`)
 // 7 - Interpolação (Template Strings)
 console.log(`A soma de 2 + 2 é: ${2 + 2}`);
 console.log(`Podemos executar qualquer coisa aqui ${console.log("teste")}`)
+
+// 8 - Booleans
+console.log(true);
+
+console.log(4 > 20);
+
+console.log(30 > 10);
+
+console.log(typeof false);
