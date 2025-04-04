@@ -55,3 +55,9 @@ console.log(10 == 10);
 console.log(10 == 9);
 
 console.log(10 != 9);
+
+// 10 -  Comparação de idêntico
+console.log(9 == "9");
+console.log(9 === "9");
+console.log(9 != "9");
+console.log(9 !== "9");
