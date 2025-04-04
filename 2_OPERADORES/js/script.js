@@ -44,3 +44,14 @@ console.log(4 > 20);
 console.log(30 > 10);
 
 console.log(typeof false);
+
+// 9 - Comparações
+console.log(5 <= 5);
+
+console.log(4 < 5);
+
+console.log(10 == 10);
+
+console.log(10 == 9);
+
+console.log(10 != 9);
