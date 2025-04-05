@@ -77,7 +77,18 @@ console.log(!true);
 
 console.log(!5 > 2);
 
+// 11 - Empty value 
+console.log(typeof null, typeof undefined);
 
+console.log(null === undefined);
 
+console.log(null == undefined);
 
+// 12 - Conversão de tipos automática 
+console.log(5 * null);
 
+console.log("teste" * "opa");
+
+console.log("10" + 1);
+
+console.log("10" - 1);
