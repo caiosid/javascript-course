@@ -9,3 +9,8 @@ console.log(nome);
 
 const idade = 31;
 console.log(idade);
+
+
+console.log(typeof nome);
+
+console.log(typeof idade);
