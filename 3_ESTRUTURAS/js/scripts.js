@@ -55,4 +55,12 @@ console.log(Math.max(5,3,1,10));
 console.log(Math.floor(5.14));
 console.log(Math.ceil(5.14));
 
+// 6 -  console
+console.log("Teste!");
+
+console.error("erro!");
+
+console.warn("aviso!");
+
+
 
