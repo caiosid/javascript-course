@@ -113,6 +113,20 @@ if (userName === "Jóse") {
     console.log("Nenhuma condição aceita!")
 }
 
+// 10 - estruturas de repetições while 
+let p = 0;
+
+while (p < 5) {
+    console.log(`Repetindo ${p}`);
+    p = p + 1;
+}
+
+// loop infinito 
+// let x = 10;
+//
+
+
+
 
 
 
