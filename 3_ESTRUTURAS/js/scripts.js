@@ -51,16 +51,30 @@ console.log(_teste, $teste);
 //alert(`O número é ${z}`);
 
 // 5 - Math
-console.log(Math.max(5,3,1,10));
-console.log(Math.floor(5.14));
-console.log(Math.ceil(5.14));
+//console.log(Math.max(5,3,1,10));
+//console.log(Math.floor(5.14));
+//console.log(Math.ceil(5.14));
 
 // 6 -  console
-console.log("Teste!");
+//console.log("Teste!");
 
-console.error("erro!");
+//console.error("erro!");
 
-console.warn("aviso!");
+//console.warn("aviso!");
+
+// 7 - if
+const m = 10;
+
+if (m > 5) {
+    console.log("M é mior que 5!");
+}
+
+const user = "Caio";
+
+if (user === "Caio") {
+    console.log(`Olá, ${user}`)
+}
+
 
 
 
