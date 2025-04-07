@@ -1,7 +1,7 @@
 // 1 - variáveis
 let nome = "Caio";
 
-console.log(nome)
+console.log(nome);
 
 nome = "Caio Cesar";
 
@@ -10,20 +10,18 @@ console.log(nome);
 const idade = 31;
 console.log(idade);
 
-
 console.log(typeof nome);
 
-console.log(typeof idade); 
+console.log(typeof idade);
 
 // 2  - mais sobre variáveis
 //let 2teste = "inválido";
 //let @teste = "inválido";
 
-let a = 10
- b = 20,
- c = 30;
+let a = 10;
+(b = 20), (c = 30);
 
-console.log(a,b,c);
+console.log(a, b, c);
 
 const nomecompleto = "Caio Cesar";
 
@@ -43,7 +41,7 @@ console.log(_teste, $teste);
 //const age = prompt("Digite a sua idade: ");
 //console.log(`Você tem ${age} anos!`);
 
-// 4 - alerta 
+// 4 - alerta
 //alert("Testando");
 
 //const z = 10;
@@ -66,87 +64,91 @@ console.log(_teste, $teste);
 const m = 10;
 
 if (m > 5) {
-    console.log("M é mior que 5!");
+  console.log("M é mior que 5!");
 }
 
 const user = "Caio";
 
 if (user === "Caio") {
-    console.log(`Olá, ${user}`)
+  console.log(`Olá, ${user}`);
 }
 
 // 8 - else
 const loggedIn = false;
 
 if (loggedIn) {
-    console.log("EStá autenticado!")
+  console.log("EStá autenticado!");
 } else {
-    console.log("Não está autenticado!")
+  console.log("Não está autenticado!");
 }
 
-const q = 10
-const w = 15
+const q = 10;
+const w = 15;
 
 if (q > 5 && w > 20) {
-    console.log("Números mais altos!");
+  console.log("Números mais altos!");
 } else {
-    console.log("Os números não são mais altos!")
+  console.log("Os números não são mais altos!");
 }
 
 // 9 - else if
 if (1 > 2) {
-    console.log("Teste")
-} else if(2 > 3){
-    console.log("Teste 2")
-} else if (5 > 1){
-    console.log("Teste 3")
+  console.log("Teste");
+} else if (2 > 3) {
+  console.log("Teste 2");
+} else if (5 > 1) {
+  console.log("Teste 3");
 }
 
 const userName = "Caio";
 const userAge = 27;
 
 if (userName === "Jóse") {
-    console.log("Bem vindo José!")
-} else if(userName === "Caio" && userAge === 27){
-    console.log("Olá Caio, você tem 27 anos!")
-} else{
-    console.log("Nenhuma condição aceita!")
+  console.log("Bem vindo José!");
+} else if (userName === "Caio" && userAge === 27) {
+  console.log("Olá Caio, você tem 27 anos!");
+} else {
+  console.log("Nenhuma condição aceita!");
 }
 
-// 10 - estruturas de repetições while 
+// 10 - estruturas de repetições while
 let p = 0;
 
 while (p < 5) {
-    console.log(`Repetindo ${p}`);
-    p = p + 1;
+  console.log(`Repetindo ${p}`);
+  p = p + 1;
 }
 
-// loop infinito 
+// loop infinito
 // let x = 10;
 //
 
 // 11 - do while
-let o = 10
+let o = 10;
 
 do {
-    console.log(`valor de o: ${o}`)
-    o--
+  console.log(`valor de o: ${o}`);
+  o--;
 } while (o > 1);
 
 // 12 - for
 for (let t = 0; t < 10; t++) {
-    console.log("Repetindo algo!");
+  console.log("Repetindo algo!");
 }
 
-let r = 10
+let r = 10;
 
-for (r; r > 0; r = r - 1){
-    console.log(`O r está diminuindo: ${r}`);
+for (r; r > 0; r = r - 1) {
+  console.log(`O r está diminuindo: ${r}`);
 }
 
-
-
-
-
-
-
+// 13 - identação
+for (let u = 0; u < 10; u++) {
+  if (u * 2 > 10) {
+    console.log(`Maior que 10 ${u}`);
+  } else {
+    if (u / 2 === 0) {
+      console.log("deu 0");
+    }
+  }
+}
