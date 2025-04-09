@@ -202,3 +202,4 @@ switch (1) {
   default:
     console.log("L não foi encontrado!");
 }
+
