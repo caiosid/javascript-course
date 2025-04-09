@@ -1,3 +1,4 @@
+/*
 // 1 -  criando uma função
 function minhaFuncao() {
   console.log("Testando");
@@ -108,10 +109,10 @@ console.log(raizQuadrada2(12));
 
 const helloWorld = () => console.log("Hello World!");
 
-helloWorld();
+helloWorld(); */
 
 // 7 - parametro opicional
-
+/*
 const multiplication = function (m, n) {
   if (n === undefined) {
     return m * 2;
@@ -135,4 +136,23 @@ const greeting = (name) => {
 
 greeting();
 
-greeting("Caio");
+greeting("Caio"); */
+
+// 8 - valor default
+const customGreeting = (name, greet = "olá") => {
+  return `${greet}, ${name}!`;
+};
+
+console.log(customGreeting("caio"));
+
+console.log(customGreeting("Caio", "Bom dia"));
+
+const repeatText = (text, repeat = 2) => {
+  for (let i = 0; i < repeat; i++) {
+    console.log(text);
+  }
+};
+
+repeatText("Testando");
+
+repeatText("Agora repete 5 vezes", 5);
