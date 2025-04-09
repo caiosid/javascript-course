@@ -1,3 +1,4 @@
+/*
 // 1 - arrays
 const lista = [1, 2, 3, 4, 5];
 
@@ -57,4 +58,22 @@ console.log(person.name);
 
 console.log(person.name.length);
 
-console.log(typeof person);
+console.log(typeof person); */
+
+// 6 - criando e deletando propriedades
+const car = {
+  egine: 2.0,
+  brand: "W",
+  model: "Tiguan",
+  km: 20000,
+};
+
+console.log(car);
+
+car.doors = 4;
+
+console.log(car);
+
+delete car.km;
+
+console.log(car);
