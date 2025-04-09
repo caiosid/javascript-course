@@ -28,3 +28,18 @@ console.log(numbers["length"]);
 const myName = "Caio";
 
 console.log(myName.length);
+
+// 4 - métodos
+const otherNumbers = [1, 2, 3, 4];
+
+const allNumbers = numbers.concat();
+
+console.log(allNumbers);
+
+const text = "algum texto";
+
+console.log(text.toUpperCase());
+
+console.log(typeof text.toUpperCase);
+
+console.log(text.indexOf("g"));
