@@ -256,13 +256,13 @@ if (marcas.includes("BMW")) {
 }
 
 // 17 - reverse
-const reverseTeste = [1,2,3,4,5,6,7,8,9,10];
+const reverseTeste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 reverseTeste.reverse();
 
 console.log(reverseTeste);
 
-// 18 - trim  
+// 18 - trim
 const trimTest = "  testando  \n ";
 
 console.log(trimTest);
@@ -296,7 +296,7 @@ console.log(fraseDeNovo);
 
 const itensParaComprar = ["mouse", "teclado", "monitor"];
 
-const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}`
+const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}`;
 
 console.log(fraseDeCompra);
 
@@ -304,3 +304,17 @@ console.log(fraseDeCompra);
 const palavra = "Testando ";
 
 console.log(palavra.repeat(6));
+
+// 23 - rest operator
+const somaInfinita = (...args) => {
+  let total = 0;
+
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
+};
+
+console.log(somaInfinita(1, 2, 3));
+
+console.log(somaInfinita(1, 30, 34, 3424, 128812, 12723, 12, 23, 54, 12));
