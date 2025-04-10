@@ -238,7 +238,7 @@ posts.forEach((post) => {
 }); */
 
 // 16 - includes
-let frutas = ["maçã", "banana", "uva", "morango", "laranja", "limão"];
+/* let frutas = ["maçã", "banana", "uva", "morango", "laranja", "limão"];
 
 let temBanana = frutas.includes("banana");
 console.log(temBanana);
@@ -291,14 +291,14 @@ const arrayDaFrase = frase.split(" ");
 console.log(arrayDaFrase);
 
 // 21 - join
-const fraseDeNovo = arrayDaFrase.join(" ");
+/* const fraseDeNovo = arrayDaFrase.join(" ");
 console.log(fraseDeNovo);
 
 const itensParaComprar = ["mouse", "teclado", "monitor"];
 
 const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}`;
 
-console.log(fraseDeCompra);
+console.log(fraseDeCompra); */
 
 // 22 - repeat
 //const palavra = "Testando ";
@@ -329,6 +329,22 @@ const somaInfinita = (...args) => {
   return total;
 };
 
-console.log(somaInfinita(1,2,3));
+console.log(somaInfinita(1, 2, 3));
 
-console.log(somaInfinita(100,200,300));
+console.log(somaInfinita(100, 200, 300));
+
+// 25 - destructuring em objetos
+const userDetails = {
+  firstName: "Caio",
+  lastName: "Battisti",
+  job: "Programador",
+};
+
+const { firstName, lastName, job } = userDetails;
+
+console.log(firstName, lastName, job);
+
+// renomear variaveis
+const { firstName: primeiroNome } = userDetails;
+
+console.log(firstName);
