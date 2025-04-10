@@ -78,17 +78,16 @@ delete car.km;
 
 console.log(car);
 
-
 // 7 - mais sobre objetos
 const obj = {
-    a: "teste",
-    b: true,
+  a: "teste",
+  b: true,
 };
 
 console.log(obj instanceof Object);
 
 const obj2 = {
-    c: []
+  c: [],
 };
 
 Object.assign(obj2, obj);
@@ -101,3 +100,25 @@ console.log(Object.keys(obj2));
 console.log(Object.keys(car));
 
 console.log(Object.entries(car));
+
+// 9 - mutação
+const c = {
+  name: "Caio",
+};
+
+const a = c;
+
+console.log(c);
+console.log(a);
+
+console.log(c === a);
+
+c.age = 31;
+
+console.log(c);
+console.log(a);
+
+delete a.age;
+
+console.log(c);
+console.log(a);
