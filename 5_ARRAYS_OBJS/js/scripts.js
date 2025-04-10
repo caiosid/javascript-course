@@ -221,7 +221,7 @@ const subArray4 = livrosSlice.slice(2);
 console.log(subArray4); */
 
 // 15 - foreach
-let numeros = [1,2,3,4,5];
+/* let numeros = [1,2,3,4,5];
 
 numeros.forEach((numero) => {
   console.log(`O número é: ${numero}`);
@@ -235,6 +235,25 @@ const posts = [
 
 posts.forEach((post) => {
   console.log(`Exibindo post: ${post.title}, da categoria ${post.category}`);
-});
+}); */
+
+// 16 - includes
+let frutas = ["maçã", "banana", "uva", "morango", "laranja", "limão"];
+
+let temBanana = frutas.includes("banana");
+console.log(temBanana);
+
+let temAbacaxi = frutas.includes("abacaxi");
+console.log(temAbacaxi);
+
+const marcas = ["BMW", "VW", "Fiat"];
+
+console.log(marcas.includes("Fiat"));
+console.log(marcas.includes("Ferrari"));
+
+if (marcas.includes("BMW")) {
+  console.log("Há carros da marca BMW!");
+}
+
 
 
