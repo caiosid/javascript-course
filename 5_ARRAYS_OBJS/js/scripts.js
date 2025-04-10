@@ -133,3 +133,23 @@ const usuarios = ["Matheus", "João", "Pedro", "Miguel"];
 for (let i = 0; i < usuarios.length; i++) {
   console.log(`Listando o usuário: ${usuarios[i]}`);
 }
+
+// 11 - métodos de array: push e pop
+const array = ["a", "b,", "c", "d"];
+
+array.push("e");
+
+console.log(array);
+console.log(array.length);
+
+array.pop();
+
+console.log(array);
+
+const itemRemovido = array.pop();
+
+console.log(itemRemovido);
+
+console.log(array);
+
+array.push("d", "e", "f", "g", "h");
