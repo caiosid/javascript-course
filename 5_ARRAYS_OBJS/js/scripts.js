@@ -135,7 +135,7 @@ for (let i = 0; i < usuarios.length; i++) {
 }
 
 // 11 - métodos de array: push e pop
-const array = ["a", "b,", "c", "d"];
+/* const array = ["a", "b,", "c", "d"];
 
 array.push("e");
 
@@ -152,4 +152,19 @@ console.log(itemRemovido);
 
 console.log(array);
 
-array.push("d", "e", "f", "g", "h");
+array.push("d", "e", "f", "g", "h"); */
+
+// 12 - shift e unshift
+const letters = ["a", "b", "c"];
+
+const letter = letters.shift();
+
+console.log(letter);
+
+console.log(letters);
+
+letters.unshift("p", "q", "r");
+
+letters.unshift("z");
+
+console.log(letters);
