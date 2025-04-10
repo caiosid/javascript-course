@@ -357,5 +357,28 @@ const [veiculoAereo, veiculoMaritimo, veiculoTerreste] = myList;
 console.log(veiculoAereo,veiculoMaritimo,veiculoTerreste); */
 
 // 27 - JSON
-const myJSon =
+const myJson =
   '{"nome:" "Caio", "age": 27, "skills": ["PHP", "JavaScript", "Python"]}';
+  
+  console.log(myJson);
+  console.log(typeof myJson);
+
+
+// 28 - JSON para objeto e objeto para JSON
+
+const myObject = JSON.parse(myJson);
+console.log(myObject);
+
+console.log(myObject.name);
+
+console.log(typeof myObject);
+
+// json invalido
+const badJson = '{"name": Caio, "age": 31}';
+
+myObject.isOpenWork = true;
+
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject)
+console.log(myObject);
