@@ -168,3 +168,21 @@ letters.unshift("p", "q", "r");
 letters.unshift("z");
 
 console.log(letters);
+
+// 13 - indexOf e lastIndexOf 
+const minhasFrutas = ["Morango", "Maçã", "Morango", "Abacate", "Pêra", "Abacate"];
+
+console.log(minhasFrutas.indexOf("Maçã"));
+console.log(minhasFrutas.indexOf("Abacate"));
+
+console.log(minhasFrutas[2]);
+console.log(minhasFrutas[minhasFrutas.indexOf("Abacate")]);
+
+console.log(minhasFrutas.lastIndexOf("Abacate"));
+console.log(minhasFrutas.lastIndexOf("Morango"));
+
+console.log(minhasFrutas.indexOf("laranja"));
+
+console.log(minhasFrutas.lastIndexOf("limão"));
+
+
