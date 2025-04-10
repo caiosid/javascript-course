@@ -320,21 +320,21 @@ console.log(fraseDeCompra); */
 //console.log(somaInfinita(1, 30, 34, 3424, 128812, 12723, 12, 23, 54, 12));
 
 // 24 - for of
-const somaInfinita = (...args) => {
-  let total = 0;
+//const somaInfinita = (...args) => {
+//let total = 0;
 
-  for (num of args) {
-    total += num;
-  }
-  return total;
-};
+//for (num of args) {
+//total += num;
+// }
+//return total;
+//};
 
-console.log(somaInfinita(1, 2, 3));
+//console.log(somaInfinita(1, 2, 3));
 
-console.log(somaInfinita(100, 200, 300));
+//console.log(somaInfinita(100, 200, 300));
 
 // 25 - destructuring em objetos
-const userDetails = {
+/* const userDetails = {
   firstName: "Caio",
   lastName: "Battisti",
   job: "Programador",
@@ -354,4 +354,8 @@ const myList = ["Avião", "Submarino", "Carro"];
 
 const [veiculoAereo, veiculoMaritimo, veiculoTerreste] = myList;
 
-console.log(veiculoAereo,veiculoMaritimo,veiculoTerreste);
+console.log(veiculoAereo,veiculoMaritimo,veiculoTerreste); */
+
+// 27 - JSON
+const myJSon =
+  '{"nome:" "Caio", "age": 27, "skills": ["PHP", "JavaScript", "Python"]}';
