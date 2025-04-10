@@ -128,11 +128,11 @@ console.log(a);
 */
 
 // 10 - loop em arrays
-const usuarios = ["Matheus", "João", "Pedro", "Miguel"];
+//const usuarios = ["Matheus", "João", "Pedro", "Miguel"];
 
-for (let i = 0; i < usuarios.length; i++) {
-  console.log(`Listando o usuário: ${usuarios[i]}`);
-}
+//for (let i = 0; i < usuarios.length; i++) {
+//  console.log(`Listando o usuário: ${usuarios[i]}`);
+//}
 
 // 11 - métodos de array: push e pop
 /* const array = ["a", "b,", "c", "d"];
@@ -155,7 +155,7 @@ console.log(array);
 array.push("d", "e", "f", "g", "h"); */
 
 // 12 - shift e unshift
-const letters = ["a", "b", "c"];
+/* const letters = ["a", "b", "c"];
 
 const letter = letters.shift();
 
@@ -169,8 +169,15 @@ letters.unshift("z");
 
 console.log(letters);
 
-// 13 - indexOf e lastIndexOf 
-const minhasFrutas = ["Morango", "Maçã", "Morango", "Abacate", "Pêra", "Abacate"];
+// 13 - indexOf e lastIndexOf
+const minhasFrutas = [
+  "Morango",
+  "Maçã",
+  "Morango",
+  "Abacate",
+  "Pêra",
+  "Abacate",
+];
 
 console.log(minhasFrutas.indexOf("Maçã"));
 console.log(minhasFrutas.indexOf("Abacate"));
@@ -183,6 +190,34 @@ console.log(minhasFrutas.lastIndexOf("Morango"));
 
 console.log(minhasFrutas.indexOf("laranja"));
 
-console.log(minhasFrutas.lastIndexOf("limão"));
+console.log(minhasFrutas.lastIndexOf("limão")); */
+
+// 14 - slice
+const livrosSlice = [
+  "A pedra filosofal",
+  "A camêra secreta",
+  "O prisoneiro de Azkaban",
+  "O cálice de fogo",
+  "A ordem da fénix",
+  "O enigma do príncipe",
+  "As relíquias da morte",
+];
+
+const subArray = livrosSlice.slice(2, 4);
+
+console.log(subArray);
+console.log(livrosSlice);
+
+const subArray2 = livrosSlice.slice(2, 4 + 1);
+
+console.log(subArray2);
+
+const subArray3 = livrosSlice.slice(10,20);
+
+console.log(subArray3);
+
+const subArray4 = livrosSlice.slice(2);
+
+console.log(subArray4);
 
 
