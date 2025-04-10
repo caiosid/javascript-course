@@ -301,20 +301,34 @@ const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}`;
 console.log(fraseDeCompra);
 
 // 22 - repeat
-const palavra = "Testando ";
+//const palavra = "Testando ";
 
-console.log(palavra.repeat(6));
+//console.log(palavra.repeat(6));
 
 // 23 - rest operator
+//const somaInfinita = (...args) => {
+//  let total = 0;
+
+// for (let i = 0; i < args.length; i++) {
+//    total += args[i];
+//  }
+//  return total;
+//};
+
+//console.log(somaInfinita(1, 2, 3));
+
+//console.log(somaInfinita(1, 30, 34, 3424, 128812, 12723, 12, 23, 54, 12));
+
+// 24 - for of
 const somaInfinita = (...args) => {
   let total = 0;
 
-  for (let i = 0; i < args.length; i++) {
-    total += args[i];
+  for (num of args) {
+    total += num;
   }
   return total;
 };
 
-console.log(somaInfinita(1, 2, 3));
+console.log(somaInfinita(1,2,3));
 
-console.log(somaInfinita(1, 30, 34, 3424, 128812, 12723, 12, 23, 54, 12));
+console.log(somaInfinita(100,200,300));
