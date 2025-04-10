@@ -60,6 +60,8 @@ console.log(person.name.length);
 
 console.log(typeof person); */
 
+/*
+
 // 6 - criando e deletando propriedades
 const car = {
   egine: 2.0,
@@ -122,3 +124,12 @@ delete a.age;
 
 console.log(c);
 console.log(a);
+
+*/
+
+// 10 - loop em arrays
+const usuarios = ["Matheus", "João", "Pedro", "Miguel"];
+
+for (let i = 0; i < usuarios.length; i++) {
+  console.log(`Listando o usuário: ${usuarios[i]}`);
+}
