@@ -255,5 +255,12 @@ if (marcas.includes("BMW")) {
   console.log("Há carros da marca BMW!");
 }
 
+// 17 - reverse
+const reverseTeste = [1,2,3,4,5,6,7,8,9,10];
+
+reverseTeste.reverse();
+
+console.log(reverseTeste);
+
 
 
