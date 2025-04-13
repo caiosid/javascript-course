@@ -108,3 +108,12 @@ function Cachorro(nome, raca) {
 const husky = new Cachorro("Ozzy", "Husky");
 
 console.log(husky);
+
+// 8 - função com métodos
+Cachorro.prototype.uivar = function () {
+  console.log("Auuuuuuu!");
+};
+
+console.log(cachorro.prototype);
+
+husky.uivar();
