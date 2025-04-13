@@ -98,3 +98,13 @@ console.log(bob);
 const jackie = criarCachorro("Jackie", "Dalmata");
 
 console.log(jackie);
+
+// 7 - funções construtoras
+function Cachorro(nome, raca) {
+  this.nome = nome;
+  this.raca = raca;
+}
+
+const husky = new Cachorro("Ozzy", "Husky");
+
+console.log(husky);
