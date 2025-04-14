@@ -21,3 +21,12 @@ console.log(title);
 const products = document.getElementsByClassName("product");
 
 console.log(products);
+
+// 5 - encontrando elementos por CSS
+const productsQuery = document.querySelectorAll(".product");
+
+console.log(productsQuery);
+
+const mainContainer = document.querySelectorAll("#main-container");
+
+console.log(mainContainer);
