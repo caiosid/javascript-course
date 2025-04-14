@@ -1,5 +1,5 @@
 // 1 - métodos
-const animal = {
+/* const animal = {
   nome: "Bob",
   latir: function () {
     console.log("Au au!");
@@ -130,4 +130,38 @@ const jeff = new CachorroClasse("Jeff", "Labrador");
 
 console.log(jeff);
 
-console.log(Object.getPrototypeOf(jeff));
+console.log(Object.getPrototypeOf(jeff)); */
+
+// 10 - mais sobre classes
+class Caminhao {
+  constructor(eixos, cor) {
+    this.eixos = eixos;
+    this.cor = cor;
+  }
+
+  descreverCaminhao() {
+    console.log(
+      `Este caminhão tem ${this.eixos} eixos, e a sua cor é:  ${this.cor}`
+    );
+  }
+}
+
+const scania = new Caminhao(6, "Vermelha");
+
+console.log(scania);
+
+scania.descreverCaminhao();
+
+Caminhao.motor = 4;
+
+const caminhao2 = new Caminhao(4, "Preta");
+
+console.log(caminhao2);
+
+console.log(caminhao2.motor);
+
+Caminhao.prototype.motor = 4.0
+
+const caminhao3 = new Caminhao(6, "Azul");
+
+console.log(caminhao3.motor);
