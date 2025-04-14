@@ -43,3 +43,21 @@ debugger;
 if (c > 5) {
   c = 25;
 }
+
+// 4 - tratemtno de dado por função
+function checkNumber(n) {
+  const result = Number(n);
+
+  if (Number.isNaN(result)) {
+    console.log("valor incorreto!");
+    return;
+  }
+
+  console.log("Valor correto!");
+  return result;
+}
+
+checkNumber(5);
+checkNumber("10");
+checkNumber({});
+checkNumber("teste");
