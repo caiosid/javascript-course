@@ -30,3 +30,12 @@ promessa
   .then((value) => console.log(`Agora é ${value}`));
 
 console.log("Algum código");
+
+// 4 - falha na promise
+Promise.resolve(4 * "asd")
+  .then((n) => {
+    if (Number.isNaN(n)) {
+      throw new Error("Valores inválidos");
+    }
+  })
+  .catch((err) => console.log(`Um erro ocorreu: ${err}`));
