@@ -187,7 +187,7 @@ console.log(caio.idade);
 console.log(Humano.prototype.idade);
 
 // 12 - symbols em classes
-class Aviao {
+/* class Aviao {
   constructor(marca, turbinas) {
     this.marca = marca;
     this.turbinas = turbinas;
@@ -233,4 +233,24 @@ console.log(myPost.exibirTitulo);
 
 myPost.adicionarTags = "programação, javascript, js";
 
-console.log(myPost);
+console.log(myPost); */
+
+// 14 - Herança
+class Mamifero {
+  constructor(patas) {
+    this.patas = patas;
+  }
+}
+
+class Lobo extends Mamifero {
+  constructor(patas, nome) {
+    super(patas, patas);
+    this.nome = nome;
+  }
+}
+
+const shark = new Lobo(4, "Shark");
+
+console.log(shark);
+
+console.log(shark.patas);
