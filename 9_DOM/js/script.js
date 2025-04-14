@@ -64,3 +64,10 @@ h3.appendChild(myText);
 console.log(h3);
 
 mainContainer.appendChild(h3);
+
+// 10 - alterando os atributos
+const firstLink = navLinks.querySelector("a");
+
+console.log(firstLink);
+
+firstLinks.setAttribute("href", "https://www.google.com");
