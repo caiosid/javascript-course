@@ -17,7 +17,7 @@ const title = document.getElementById("title");
 
 console.log(title);
 
-// 4 - encontrando elementos por classe 
+// 4 - encontrando elementos por classe
 const products = document.getElementsByClassName("product");
 
 console.log(products);
@@ -30,3 +30,11 @@ console.log(productsQuery);
 const mainContainer = document.querySelectorAll("#main-container");
 
 console.log(mainContainer);
+
+// 6 - insertBefore
+const p = document.createElement("p");
+
+const header = title.parentElement;
+
+header.insertBefore(p, title);
+
