@@ -75,3 +75,12 @@ firstLink.setAttribute("href", "https://www.google.com");
 console.log(firstLink.getAttribute("href"));
 
 firstLink.setAttribute("target", "_blank");
+
+// 11 - altura e largura
+const footer = document.querySelector("footer");
+
+console.log(footer.offsetWidth);
+console.log(footer.offsetHeight);
+
+console.log(footer.cli)
+
