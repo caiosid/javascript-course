@@ -67,22 +67,33 @@ b.then((v) => console.log(`O resultado é ${v}}`)).catch((err) =>
   console.log(`Um erro ocorreu: ${err}`)
 );
 
-
 // 6 - reslvendo varias promises
 const p1 = new Promise((resolve, reject) => {
-    setInterval(function () {
-        resolve(10);
-    }, 1000);
+  setInterval(function () {
+    resolve(10);
+  }, 1000);
 });
 
 const p2 = Promise(10 + 20);
 
 const p3 = new Promise((resolve, reject) => {
-    if (30 > 10) {
-        resolve(30);
-    } else {
-        reject("Erro!");
-    }
+  if (30 > 10) {
+    resolve(30);
+  } else {
+    reject("Erro!");
+  }
 });
 
-Promise.all([p1,p2,p3]).then((values) => console.log(values));
+Promise.all([p1, p2, p3]).then((values) => console.log(values));
+
+// 7 - async functions
+async function somarComDelay(a, b) {
+  return a + b;
+}
+
+somarComDelay(2, 4).then((value) => {
+  console.log(`O valor da soma é: ${value}`);
+});
+
+
+console.log("teste async");
