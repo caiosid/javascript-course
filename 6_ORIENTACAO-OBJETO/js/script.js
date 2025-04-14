@@ -236,7 +236,7 @@ myPost.adicionarTags = "programação, javascript, js";
 console.log(myPost); */
 
 // 14 - Herança
-class Mamifero {
+  class Mamifero {
   constructor(patas) {
     this.patas = patas;
   }
@@ -253,4 +253,13 @@ const shark = new Lobo(4, "Shark");
 
 console.log(shark);
 
-console.log(shark.patas);
+console.log(shark.patas); 
+
+// 15 - Operador instanceof
+console.log(shark instanceof Lobo);
+
+console.log(Lobo instanceof Mamifero);
+
+console.log(new Lobo(4, "teste") instanceof Mamifero);
+
+console.log(new postMessage("a","b") instanceof Cachorro);
