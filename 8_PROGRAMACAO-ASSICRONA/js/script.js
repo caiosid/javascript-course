@@ -95,5 +95,21 @@ somarComDelay(2, 4).then((value) => {
   console.log(`O valor da soma é: ${value}`);
 });
 
-
 console.log("teste async");
+
+// 8 - async await
+function resoleComDelay() {
+  return new Promise((resolve) => {
+    setInterval(() => {
+      resolve("Resolveu a Promise");
+    }, 2000);
+  });
+}
+
+async function chamadaAsync() {
+  console.log("Chamando a Promise, e esperando o resultado");
+  const result = await resoleComDelay();
+  console.log(`O resultado chegou: ${result}`);
+}
+
+chamadaAsync();
