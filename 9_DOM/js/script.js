@@ -82,5 +82,11 @@ const footer = document.querySelector("footer");
 console.log(footer.offsetWidth);
 console.log(footer.offsetHeight);
 
-console.log(footer.cli)
+console.log(footer.cli);
+
+// 12 - posição do elemento
+const product1 = products[0];
+
+console.log(product1.getBoundingClientRect());
+
 
