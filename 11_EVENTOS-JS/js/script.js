@@ -5,7 +5,7 @@ btn.addEventListener("click", function () {
   console.log("Clicou aqui!");
 });
 
-// 2 - removendo eventos 
+// 2 - removendo eventos
 const secondBtn = document.querySelector("#btn");
 
 function imprimirMensagem() {
@@ -19,4 +19,15 @@ const thirBtn = document.querySelector("#other-btn");
 thirBtn.addEventListener("click", () => {
   console.log("Evento removido");
   secondBtn.removeEventListener("click", imprimirMensagem);
+});
+
+// 3 - argumento do evento
+const myTitle = document.querySelector("#my-title");
+
+myTitle.addEventListener("click", (event) => {
+  console.log(event);
+  console.log(event.srcElement);
+  console.log(event.offsetX);
+  console.log(event.pointerType);
+  console.log(event.target);
 });
