@@ -89,4 +89,8 @@ const product1 = products[0];
 
 console.log(product1.getBoundingClientRect());
 
+// 13 - CCS com JS
+mainContainer.style.color = "red";
+mainContainer.style.backgroundColor = "#333";
+
 
