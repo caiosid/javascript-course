@@ -31,3 +31,12 @@ myTitle.addEventListener("click", (event) => {
   console.log(event.pointerType);
   console.log(event.target);
 });
+
+// 4 - propagação
+const containerBtn = document.querySelector("#btn-container");
+const btnInsideContainer = document.querySelector("#div-btn");
+
+btnInsideContainer.addEventListener("click", (e) => {
+  e.stopPropagation();
+  console.log("evento 2");
+});
