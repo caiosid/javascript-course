@@ -50,12 +50,12 @@ addEventListener("click", (e) => {
   console.log("Não alterou a página");
 });
 
-// 6 - eventos de tecla 
+// 6 - eventos de tecla
 document.addEventListener("keyup", (e) => {
   console.log(`Soltou a tecla ${e.key}`);
 });
 
-// 7 -  eventos de mouse 
+// 7 -  eventos de mouse
 const mouseEvents = document.querySelector("#mouse");
 
 mouseEvents.addEventListener("mouse", () => {
@@ -71,7 +71,14 @@ mouseEvents.addEventListener("dbclick", () => {
 });
 
 // 8 - movimento do mouse
-document.addEventListener("mousemove", (e) => {
-  console.log(`No eixo X: ${e.x}`);
-  console.log(`No eixo Y: ${e.y}`);
+//document.addEventListener("mousemove", (e) => {
+//console.log(`No eixo X: ${e.x}`);
+//console.log(`No eixo Y: ${e.y}`);
+//});
+
+// 9 - evento por scroll
+window.addEventListener("scroll", (e) => {
+  if (window.pageXOffset > 200) {
+    console.log("Passamos de 200px");
+  }
 });
